@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="./assets/fontawesome-free-6.4.0-web/fontawesome-free-6.4.0-web/css/all.min.css"
+        />
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <!-- <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        /> -->
+
+        <title>My Demo Form</title>
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <h1 class="header__heading">Contact Us</h1>
+                <p class="header__desc">
+                    Any question or remarks? Just write us a message!
+                </p>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__inner">
+                        <section class="contact__developer">
+                            <h2 class="contact__heading">
+                                Contact Information
+                            </h2>
+                            <p class="contact__desc">
+                                Fill up the form and our Team will get back to
+                                you within 24 hours.
+                            </p>
+                            <div class="contact__column">
+                                <div class="contact__info">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span class="contact__label"
+                                        >+84123456789</span
+                                    >
+                                </div>
+                                <div class="contact__info">
+                                    <i
+                                        class="fa-sharp fa-solid fa-envelope"
+                                    ></i>
+                                    <span class="contact__label"
+                                        >abc@gmail.com</span
+                                    >
+                                </div>
+                                <div class="contact__info">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span class="contact__label"
+                                        >123 Nguyen Chi Thanh</span
+                                    >
+                                </div>
+                            </div>
+                            <div class="social">
+                                <a class="social__link" href="#!">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                                <a class="social__link" href="#!">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a class="social__link" href="#!">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a class="social__link" href="#!">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </section>
+                        <div class="contact__client">
+                            <form
+                                action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                                method="post"
+                            >
+                                <div class="form-info">
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label
+                                                class="form-group__info"
+                                                for="first-name"
+                                                >First Name</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="first-name"
+                                                id="first-name"
+                                                placeholder="Write first name..."
+                                                required
+                                                minlength="2"
+                                            />
+                                            <p class="form__error">
+                                                Please, Enter 2 or more
+                                                characters
+                                            </p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                class="form-group__info"
+                                                for="last-name"
+                                                >Last Name</label
+                                            >
+                                            <input
+                                                type="text"
+                                                name="last-name"
+                                                id="last-name"
+                                                placeholder="Write last name..."
+                                                required
+                                                minlength="2"
+                                            />
+                                            <p class="form__error">
+                                                Please, Enter 2 or more
+                                                characters
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label
+                                                class="form-group__info"
+                                                for="mail"
+                                                >Mail</label
+                                            >
+                                            <input
+                                                type="email"
+                                                name="mail"
+                                                id="mail"
+                                                placeholder="Enter email..."
+                                                required
+                                                pattern="^[a-z][a-z0-9_\.]{5,32}@[a-z0-9]{2,}(\.[a-z0-9]{2,4}){1,2}$"
+                                            />
+                                            <p class="form__error">
+                                                Please, Enter the valid email
+                                            </p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label
+                                                class="form-group__info"
+                                                for="phone"
+                                                >Phone</label
+                                            >
+                                            <input
+                                                type="tel"
+                                                name="phone"
+                                                id="phone"
+                                                placeholder="Enter phone..."
+                                                required
+                                                pattern="(84|0[3|5|7|8|9])+([0-9]{8})\b"
+                                            />
+                                            <p class="form__error">
+                                                Please, Enter the valid phone
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="form-check">
+                                        <label
+                                            class="form-check__question"
+                                            for=""
+                                        >
+                                            What the of website do you need?
+                                        </label>
+                                        <div class="form-check__inner">
+                                            <div class="radio-btn">
+                                                <input
+                                                    type="radio"
+                                                    name="radio"
+                                                    id="w-disign"
+                                                    value="w-disign"
+                                                />
+                                                <label for="w-disign"
+                                                    >Web Design</label
+                                                >
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input
+                                                    type="radio"
+                                                    name="radio"
+                                                    id="w-development"
+                                                    value="w-development"
+                                                />
+                                                <label for="w-development"
+                                                    >Web Development</label
+                                                >
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input
+                                                    type="radio"
+                                                    name="radio"
+                                                    id="l-design"
+                                                    value="l-design"
+                                                />
+                                                <label for="l-design"
+                                                    >Logo Design</label
+                                                >
+                                            </div>
+                                            <div class="radio-btn">
+                                                <input
+                                                    type="radio"
+                                                    name="radio"
+                                                    id="other"
+                                                    value="other"
+                                                />
+                                                <label for="other">Other</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-mess">
+                                        <label for="mess">Message</label>
+                                        <textarea
+                                            class="form-mess__text"
+                                            name="mess"
+                                            id="mess"
+                                            placeholder="Write your message..."
+                                            minlength="10"
+                                        ></textarea>
+                                        <p class="form__error">
+                                            Please, Enter 10 or more characters
+                                        </p>
+                                    </div>
+                                    <button class="btn">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
